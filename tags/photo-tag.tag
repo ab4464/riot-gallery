@@ -1,5 +1,5 @@
 <photo-tag>
-  <img src={ imageURL }/>
+  <img src={ imageURL_src }/>
   <p if={ imageCaption }>{ imageCaption }</p>
   <img class=“noImageIcon” src=“http://www.emoji.co.uk/files/google-emojis/smileys-people-android/7285-thumbs-down-sign.png” if{ !imageCaption }/>
 
@@ -18,7 +18,7 @@
   </style>
 
   <script>
-  this.imageURL = "https://placeholdit.co//i/100x100";
+  this.imageURL = opts.imageURL_src;
   this.imageCaption = "";
   </script>
 </photo-tag>
