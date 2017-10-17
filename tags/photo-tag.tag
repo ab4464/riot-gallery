@@ -1,7 +1,7 @@
 <photo-tag>
-  <img src={ image_src }/>
-  <p if={ imageCaption }>{ imageCaption }</p>
-  <img class=“noImageIcon” src=“https://maxcdn.icons8.com/Share/icon/Hands//thumbs_down1600.png” if{ ! imageCaption }/>
+  <img src={ tag._image_src }/>
+  <p if={ tag._image_caption }>{ tag._image_caption }</p>
+  <img class=“noImageIcon” src=“https://maxcdn.icons8.com/Share/icon/Hands//thumbs_down1600.png” if{ ! tag._image_caption }/>
 
   <style>
   :scope {
@@ -18,7 +18,8 @@
   </style>
 
   <script>
-  this.image_src = opts.image_src;
-  this.imageCaption = opts.imageCaption;
+  tag = this;
+  tag._image_src = opts.image_src;
+  tag._image_caption = opts.image_caption;
   </script>
 </photo-tag>
