@@ -1,7 +1,7 @@
 <photo-tag>
   <img src={ opts.imageURL_src }/>
-  <p if={ imageCaption }>{ imageCaption }</p>
-  <img class=“noImageIcon” src=“http://www.emoji.co.uk/files/google-emojis/smileys-people-android/7285-thumbs-down-sign.png” if{ !imageCaption }/>
+  <p if={ imageCaption }>{ opts.imageCaption }</p>
+  <img class=“noImageIcon” src=“https://maxcdn.icons8.com/Share/icon/Hands//thumbs_down1600.png” if{ !imageCaption }/>
 
   <style>
   :scope {
@@ -18,7 +18,7 @@
   </style>
 
   <script>
-  this.imageURL = opts.imageURL_src;
-  this.imageCaption = "";
+  this.imageURL_src = opts.imageURL_src;
+  this.imageCaption = opts.imageCaption;
   </script>
 </photo-tag>
