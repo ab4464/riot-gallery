@@ -1,7 +1,7 @@
 <photo-tag>
   <img src={ opts.imageURL_src }/>
   <p if={ imageCaption }>{ opts.imageCaption }</p>
-  <img class=“noImageIcon” src=“https://maxcdn.icons8.com/Share/icon/Hands//thumbs_down1600.png” if{ !imageCaption }/>
+  <img class=“noImageIcon” src=“https://maxcdn.icons8.com/Share/icon/Hands//thumbs_down1600.png” if{ ! imageCaption }/>
 
   <style>
   :scope {
