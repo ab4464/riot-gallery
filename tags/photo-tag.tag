@@ -1,5 +1,5 @@
 <photo-tag>
-  <img src={ imageURL_src }/>
+  <img src={ opts.imageURL_src }/>
   <p if={ imageCaption }>{ imageCaption }</p>
   <img class=“noImageIcon” src=“http://www.emoji.co.uk/files/google-emojis/smileys-people-android/7285-thumbs-down-sign.png” if{ !imageCaption }/>
 
